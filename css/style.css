@@ -1,0 +1,184 @@
+body{
+	font-family: inherit;
+}
+#btnUp{
+	position: absolute;
+	position: fixed;
+	bottom: 6%;
+	right: 2%;
+	z-index: 222222;
+}
+
+/* 
+====================================================================================================================
+												                            Start Home
+====================================================================================================================
+*/
+
+	#home{
+		background: url(../images/home.jpg) no-repeat center;
+		background-color: rgba(214, 46, 51 , 0.6);
+		background-size: cover;
+		height: 70vh;
+		background-blend-mode: overlay;
+		position: relative;
+	}
+
+	#home .home-title{
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+}
+
+	#home .home-title > h1{
+		font-size: 4rem;
+	}
+
+	#navigation{
+		/* background-color: red; */
+		height: 100vh;
+		width: 26%;
+		position: relative;
+		left: -19%;
+		z-index:999999;
+	}
+	
+	#links{
+		padding: 15px;
+		background-color: #414658;
+		overflow: hidden;
+	}
+	
+	#links ul li a{
+		color: white;
+		font-size: 2.5rem;
+		text-decoration: none;
+	}
+	
+	#links ul li a:hover{
+		color: rgba(214, 46, 51 , 0.4);
+	}
+
+	#close-icon:hover{
+		color: rgba(214, 46, 51 , 0.4)
+	}
+	
+	#open-nav{
+		width: 28%;
+		cursor: pointer;
+		user-select: none;
+	}
+
+/* 
+====================================================================================================================
+												                            End Home
+====================================================================================================================
+*/
+
+
+/* 
+====================================================================================================================
+												                            Start Details
+====================================================================================================================
+*/
+
+  #details{
+    padding: 10% 0px;
+  }
+
+  #details h3{
+    background-color: #e68285;
+    color: white;
+    padding: 10px 0px;
+    cursor: pointer;
+  }
+
+  #details p{
+    background-color: #ccc;
+    display: none;
+  }
+
+  #details h3,
+  #details p{
+    text-align: center;
+    margin: 0;
+  }
+
+
+/* 
+====================================================================================================================
+												                            End Details
+====================================================================================================================
+*/
+
+
+/* 
+====================================================================================================================
+												                            Start Display
+====================================================================================================================
+*/
+
+  #displayTime{
+	  background: url(../images/[assignmentjs.netlify.app][625]invitation-2508607__340.jpg) no-repeat center;
+	  background-color: rgba(158, 8, 13, 0.6);
+	  background-blend-mode: overlay;
+    margin-bottom: 5%;
+  }
+
+  .social ul li{
+	  display: inline-block;
+	  border: 1px solid #999;
+    /* padding: 5px 10px; */
+	  width: 40px;
+	  height: 40px;
+	  text-align: center;
+	  vertical-align: middle;
+	  line-height: 40px;
+	}
+	
+  .social ul li:hover{
+    background-color: #D62E33;
+  }
+
+  .social ul li:hover a{
+    color: white;
+  }
+
+	.social ul li a{
+		color: #777;
+  }
+
+
+/* 
+====================================================================================================================
+													                          End Display
+====================================================================================================================
+*/
+
+
+/* 
+====================================================================================================================
+													                          Start Join
+====================================================================================================================
+*/
+
+  #join{
+    padding: 8%;
+  }
+
+  #join :is(p , span , input) {
+	color: #777;
+  }
+
+
+/* 
+====================================================================================================================
+												                            End Join
+====================================================================================================================
+*/
