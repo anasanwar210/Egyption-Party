@@ -9,12 +9,14 @@
   $("#open-nav > span").click(function () {
     $("#navigation").animate({ left: "0%" }, 1000);
     $("#navigation").css('position' , 'fixed');
+    $("#open-nav > span").fadeOut();
   });
 
   // Close Nav
   $("#close-icon").click(function () {
     $("#navigation").animate({ left: "-19%" }, 1000);
     $("#navigation").css('position' , 'relative');
+    $("#open-nav > span").fadeIn();
   });
 
 
@@ -68,27 +70,6 @@ setInterval(displayDifference, 1000);
 
 
 
-// var int = 100;
-
-// $("textarea").keydown(function(){
-//   var charLength = $(this).val().Length,
-//       calcLength = int - charLength;
-      
-//   if(calcLength <= 0)
-//   {
-//     // var hintArea = Number(document.getElementById('hint').value);
-//     // hintArea.innerHTML = "You have exceeded the character limit";
-//     $("#hint").html("<span>You have exceeded the character limit</span>")
-//   }
-//   else
-//   {
-//     // var hintArea = Number(document.getElementById('hint').value);
-//     // hintArea.innerHTML = calcLength;
-//     $("#hint").html(calcLength);
-//   }
-// });
-
-
 
 var myText = document.getElementById("myText"),
     mySpan = document.getElementById("descArea");
@@ -117,36 +98,32 @@ let detailsOffset     = $('#details').offset().top,
 
 $("#links li:nth-child(1)").click(function(){
   $("html,body").animate({scrollTop:0} , 1000);
-  console.log("Home")
 });
 
 
 $("#links li:nth-child(2)").click(function(){
   $("html,body").animate({scrollTop:displayTimeOffset} , 1000);
-  console.log('Event Time');
 });
 
 
 $("#links li:nth-child(3)").click(function(){
   $("html,body").animate({scrollTop:detailsOffset} , 1000)
-  console.log('Details');
 });
 
 
 $("#links li:nth-child(4)").click(function(){
   $("html,body").animate({scrollTop:joinOffset} , 1000);
-  console.log('JOIN');
 });
 
 
 $(window).scroll(function(){
   let wScroll = $(window).scrollTop();
   // console.log(wScroll);
-  if(wScroll > detailsOffset){
-    $("#btnUp").fadeIn();
+  if(wScroll <= detailsOffset){
+    $("#btnUp").fadeOut();
   }
   else{
-    $("#btnUp").fadeOut();
+    $("#btnUp").fadeIn();
   }
 });
 
