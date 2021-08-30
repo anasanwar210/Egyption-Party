@@ -2,6 +2,7 @@ body{
 	font-family: inherit;
 }
 #btnUp{
+	display: none;
 	position: absolute;
 	position: fixed;
 	bottom: 6%;
